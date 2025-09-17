@@ -1,0 +1,7 @@
+--add-data "index.html;." --add-data "assets;assets"
+
+// ONE big file, slower load
+pyinstaller --onefile --windowed --add-data "index.html;." --add-data "assets;assets" main.py
+
+// folder, faster
+pyinstaller --onedir --windowed --add-data "index.html;." --add-data "assets;assets" main.py
